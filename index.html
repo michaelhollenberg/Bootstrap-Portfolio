@@ -1,50 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Basic Portfolio</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
 </head>
+
 <body>
-<h1>Michael Hollenberg</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Porfolio</a>
-                    </li>
-                 
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-   
-                </div>
-              </nav>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" id="logo">Michael Hollenberg</a>
+      </div>
+      <button type="button" class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#page-nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="page-nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- End of navbar -->
 
-            <h2>About Me<br></h2>
+  <!-- Start of container -->
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="assets/imgs/MyPic.jpg" alt="" id="about-image" />
+          <p>My name is Michael Hollenberg. I am a full stack developer. A little bit about myself, while I was in college I studied finance at the University of Connecticut while also playing poker profesionally. I traveled the country playing tournaments and even appeared on some televised final tables earning over $300,000 in official earnings. 
+             After college I took a job in the finance industry at Merrill Lynch. I worked there for about 15 months, and soon realized that the techonolgy we used there was way more interesting to me and that I wanted to be more involved with the software development side of things.  
+            Thus I ended up at a Rutgers Coding bootcamp as well as putting in countless hours of my free time to try and learn a new skill and switch career paths.</p>
+          <br />
+          <p>
+          </p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <aside class="block">
+          <h1 class="block-header connect-header">Connect With Me</h1>
+          <hr />
+          <div id="images">
+            <img src="assets/imgs/github.png" alt="" class="connect-photo">
+            <img src="assets/imgs/linkedin.png" alt="" class="connect-photo">
+            <img src="assets/imgs/stackover2.png" alt="" class="connect-photo">
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <!-- End of container -->
 
-            <img src="http://pokerdb.thehendonmob.com/pictures/Michael_Hollenberg_winner__1_.jpg" alt="my picture">
-            <p> My name is Michael Hollenberg. This is a picture from a poker tournament I won for $130,000. When I was in college I played poker profesionally. I traveled the country playing tournaments and even appeared on some televised final tables. After college I took a job in the finance industry at Merrill Lynch.  I worked there for about 15 months, and soon decided that wasn't where I wanted to be.  Thus I ended up at Georgia Tech Coding bootcamp to try and learn a new skill and switch career paths. 
-                </p>
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
+  </footer>
+  <!-- End of footer -->
 
-                        
-                        <div class="footer">
-                          <p>Connect with me</p>
-                        </div>
-    
-            
-    
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
 </body>
+
 </html>
